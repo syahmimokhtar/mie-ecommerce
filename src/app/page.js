@@ -12,8 +12,8 @@ export default function Home() {
       </Head>
       <Navbar />
 
-      <main>
-        asas
+      <main className="">
+        
       </main>
 
       <Footer />

@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <div className="py-24 px-4 md:px-8 lg:px-16 xl:32 2xl:px-64 bg-gray-100 text-sm mt-24">
+    <div className="py-20 px-4 md:px-8 lg:px-16 xl:32 2xl:px-64 bg-gray-100 text-sm mt-24">
       {/* TOP */}
       <div className="flex flex-col md:flex-row justify-between gap-24">
         {/* LEFT */}
@@ -12,10 +12,9 @@ const Footer = () => {
             <div className="text-2xl tracking-wide">LAMA</div>
           </Link>
           <p>
-            3252 Winding Way, Central Plaza, Willowbrook, CA 90210, United
-            States
+           asasasaxxxxxxxxxxxxx xxxxxxxxxxxxxxxxxxxx
           </p>
-          <span className="font-semibold">hello@lama.dev</span>
+          <span className="font-semibold">hello@mie.dev</span>
           <span className="font-semibold">+1 234 567 890</span>
           <div className="flex gap-6">
             <Image src="/assets/facebook.png" alt="" width={16} height={16} />

@@ -3,6 +3,9 @@ import React from 'react'
 import Link from 'next/link';
 import Image from 'next/image';
 import Menu from './Menu'
+import Searchbar from './Searchbar'
+import NavIcons from './NavIcons'
+
 const Navbar = () => {
   return (
    
@@ -10,12 +13,12 @@ const Navbar = () => {
     {/* MOBILE */}
     <div className="h-full flex items-center justify-between md:hidden">
       <Link href="/">
-        <div className="text-2xl tracking-wide">LAMA</div>
+        <div className="text-2xl tracking-wide">MIE</div>
       </Link>
       <Menu />
     </div>
 
-    
+
     {/* BIGGER SCREENS */}
     <div className="hidden md:flex items-center justify-between gap-8 h-full">
       {/* LEFT */}
@@ -34,8 +37,8 @@ const Navbar = () => {
       </div>
       {/* RIGHT */}
       <div className="w-2/3 xl:w-1/2 flex items-center justify-between gap-8">
-        {/* <SearchBar />
-        <NavIcons /> */}
+         <Searchbar />
+         <NavIcons />
       </div>
     </div>
   </div>
