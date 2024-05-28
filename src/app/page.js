@@ -2,6 +2,7 @@ import React from "react";
 import Head from "next/head";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import Slider from "./components/Slider";
 
 
 export default function Home() {
@@ -13,7 +14,7 @@ export default function Home() {
       <Navbar />
 
       <main className="">
-        
+        <Slider />
       </main>
 
       <Footer />

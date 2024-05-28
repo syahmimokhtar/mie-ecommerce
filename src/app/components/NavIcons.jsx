@@ -10,9 +10,11 @@ const NavIcons = () => {
     const [isCartOpen, setIsCartOpen]=useState(false);
 
     const toggleCart=()=>
-        {
-            setIsCartOpen(prev=>!prev)
-        }
+    {
+        setIsCartOpen(prev=>!prev)
+    }
+
+
   return (
     <>
         <div className="flex items-center gap-4 xl:gap-4">
@@ -31,7 +33,7 @@ const NavIcons = () => {
             <Image onClick={toggleCart} src="/assets/cart.png" width={28}  height={28} className='cursor-pointer'  alt="cart"/>
             {isCartOpen && <CartModal /> }
 
-            
+
         </div>
     </>
   )
