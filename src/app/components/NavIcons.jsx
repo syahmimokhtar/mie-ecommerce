@@ -1,12 +1,18 @@
 "use client";
 import Image from "next/image";
 import React, {useState} from "react";
+import CartModal from './CartModal';
+
 
 const NavIcons = () => {
 
     const [isProfileOpen, setIsProfileOpen]=useState(false)
     const [isCartOpen, setIsCartOpen]=useState(false);
 
+    const toggleCart=()=>
+        {
+            setIsCartOpen(prev=>!prev)
+        }
   return (
     <>
         <div className="flex items-center gap-4 xl:gap-4">
@@ -22,7 +28,10 @@ const NavIcons = () => {
             
             <Image src="/assets/notification.png" width={28}  height={28} className='cursor-pointer' alt="notification" />
             <div className='absolute w-8 h-8 md:right-60 md:top-2 text-md rounded-full bg-red-500 text-white text-center font-bold'>2</div>
-            <Image src="/assets/cart.png" width={28}  height={28} className='cursor-pointer'  alt="cart"/>
+            <Image onClick={toggleCart} src="/assets/cart.png" width={28}  height={28} className='cursor-pointer'  alt="cart"/>
+            {isCartOpen && <CartModal /> }
+
+            
         </div>
     </>
   )
