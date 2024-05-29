@@ -55,8 +55,8 @@ const Slider = () => {
                 <div className="md:grid md:grid-cols-2 gap-2">
                     {/* description */}
                     <div className="relative container md:mx-auto md:my-72 ">
-                        <h3 className="text-center text-5xl m-4">{slide.title}</h3> 
-                        <h2 className="font-bold text-center text-7xl text-nowrap   ">{slide.description}</h2> 
+                        <h3 className="text-center text-5xl m-5">{slide.title}</h3> 
+                        <h2 className="font-bold text-center md:text-7xl text-5xl text-balance   ">{slide.description}</h2> 
                         <Button title="Shop Now" />
                     </div>
 
