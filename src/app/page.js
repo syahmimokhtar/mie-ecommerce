@@ -13,7 +13,6 @@ export default function Home() {
        <Head>
         <link  rel="icon" href="/favicon.ico" />
       </Head>
-      <Navbar />
 
       <main className="">
         <Slider />
@@ -35,7 +34,6 @@ export default function Home() {
 
       </main>
 
-      <Footer />
   </> 
   );
 }

@@ -8,7 +8,7 @@ const CategoryList = () => {
         {
             id:1,
             imageSrc:`https://images.pexels.com/photos/8310726/pexels-photo-8310726.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1`,
-            categoryName:"health"
+            categoryName:"Health"
         },
 
         {
@@ -56,8 +56,7 @@ const CategoryList = () => {
 
             {list.map((item,index) =>
                 ( 
-                    <Link key={index} href='/list?cat=test' className='flex flex-shrink-0 w-full sm:w-1/2 lg:w-1/4 xl:w-1/6'>
-
+                    <Link key={index} href='/list?cat=all-products' className='flex flex-shrink-0 w-full sm:w-1/2 lg:w-1/4 xl:w-1/6'>
                         <div className="flex flex-col">
                             <div className="relative bg-slate-100 w-full h-96">
                                 <Image width={1980} height={1080} className="w-full h-full rounded-md object-cover" src="https://images.pexels.com/photos/8310726/pexels-photo-8310726.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="cat"  />
