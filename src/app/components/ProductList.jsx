@@ -45,20 +45,20 @@ const ProductList = () => {
 
   ]
   return (
-    <div className="relative container md:mx-28    md:grid md:grid-cols-4 md:gap-4 justify-between">
+    <div className="relative container md:mx-28 mx-24 md:grid md:grid-cols-4 md:gap-4 justify-between">
       { list.map((item,index) =>
         ( 
           <> 
-              <div className="flex flex-col justify-between flex-wrap"  key={index}>
-                  <Image src={`${item.src}`} width={1980} height={1080} className='object-cover relative h-72 w-72 rounded' />
-                  <div className="flex-row flex justify-normal">
-                      <p className="font-semibold text-xl text-left mt-4 mr-10" >{item.productName}</p>
-                      <p className="font-semibold  text-xl text-right  mt-4 mb-4" >{item.price}</p>
+              <div className="flex flex-col justify-between"  key={index}>
+                  <Image src={`${item.src}`} width={1980} height={1080} className='object-cover relative h-72 w-72 rounded' alt="featured" />
+                  <div className="flex-row flex justify-between">
+                      <p className="font-semibold md:text-xl text-center md:text-left  mt-4 md:mr-10" >{item.productName}</p>
+                      <p className="font-semibold md:text-xl  text-center  md:text-left mt-4 mb-4" >{item.price}</p>
                   </div>
                   
                   <div className='relative container-mx-auto'>
                       <p className="text-left text-md" >{item.description}</p>
-                      <Button className="relative rounded-xl p-2 text-red-500 mt-4 outline  outline-red-500" title="Add Cart" />
+                      <Button className="relative rounded-2xl py-4 px-4 text-red-500 mt-4 outline  outline-red-500" title="Add Cart" />
                   </div>
               </div>
             </>
