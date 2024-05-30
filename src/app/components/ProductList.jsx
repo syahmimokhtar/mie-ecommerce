@@ -45,23 +45,20 @@ const ProductList = () => {
 
   ]
   return (
-    <div className="relative container md:mx-28 mx-24 md:grid md:grid-cols-4 md:gap-4 justify-between">
+    <div className="relative container md:mx-auto p-10 md:grid md:grid-cols-4 md:gap-7 ">
       { list.map((item,index) =>
         ( 
-          <> 
-              <div className="flex flex-col justify-between"  key={index}>
-                  <Image src={`${item.src}`} width={1980} height={1080} className='object-cover relative h-72 w-72 rounded' alt="featured" />
-                  <div className="flex-row flex justify-between">
-                      <p className="font-semibold md:text-xl text-center md:text-left  mt-4 md:mr-10" >{item.productName}</p>
-                      <p className="font-semibold md:text-xl  text-center  md:text-left mt-4 mb-4" >{item.price}</p>
-                  </div>
-                  
-                  <div className='relative container-mx-auto'>
-                      <p className="text-left text-md" >{item.description}</p>
-                      <Button className="relative rounded-2xl py-4 px-4 text-red-500 mt-4 outline  outline-red-500" title="Add Cart" />
-                  </div>
-              </div>
-            </>
+             <div className="flex flex-col justify-between" key={index}>
+                <Image src={`${item.src}`} width={1980} height={1080} className="object-cover relative h-72 w-96 rounded" alt="featured" />
+                <div className="flex flex-row flex-wrap justify-between mt-4 mb-4">
+                  <p className="font-semibold md:text-xl text-left">{item.productName}</p>
+                  <p className="font-semibold md:text-xl md:text-right">{item.price}</p>
+                </div>
+                <div className="relative container mx-auto">
+                  <p className="text-left text-md">{item.description}</p>
+                  <Button className="relative rounded-2xl py-4 px-4 text-red-500 mt-4 outline outline-red-500 mb-10" title="Add Cart" />
+                </div>
+           </div>
         ))
        }
       
