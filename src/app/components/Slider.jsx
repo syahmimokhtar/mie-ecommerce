@@ -57,7 +57,7 @@ const Slider = () => {
                     <div className="relative container md:mx-auto md:my-72 ">
                         <h3 className="text-center text-5xl m-5">{slide.title}</h3> 
                         <h2 className="font-bold text-center md:text-7xl text-5xl text-balance   ">{slide.description}</h2> 
-                        <Button title="Shop Now" />
+                        <Button className="text-xl text-center md:left-96 left-28 md:w-40 w-40 container md:mx-auto relative cursor-pointer rounded-md bg-black text-white py-4 px-4 m-12 " title="Shop Now" />
                     </div>
 
 
@@ -84,7 +84,9 @@ const Slider = () => {
                     key={slide.id}
                     onClick={() => setCurrent(index)}
                 >
-                    {current === index && (
+
+
+                  {current === index && (
                     <div className="w-[6px] h-[6px] bg-gray-600 rounded-full"></div>
                     )}
                 </div>
